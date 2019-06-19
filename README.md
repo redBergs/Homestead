@@ -14,5 +14,5 @@ You can check the new released version from the url below.<br/>
 ### Create an empty key
 ```
 $ mkdir -p ~/.ssh
-$ touch ~/.ssh/id_rsa.pub
+$ touch ~/.ssh/id_rsa
 ```
