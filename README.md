@@ -1,4 +1,6 @@
 ### Start using Homestead as dev environment
+You will need to install vagrant and VirtualBox before setting up Homestead.
+
 ```
 $ git clone https://github.com/laravel/homestead.git ~/Homestead
 $ cd ~/Homestead
