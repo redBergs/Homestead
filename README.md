@@ -6,10 +6,10 @@ $ git checkout [to New Version]
 $ // Mac / Linux...
 $ bash init.sh
 ```
-You can chek the new released version from the url below.<br/>
+You can check the new released version from the url below.<br/>
 `https://github.com/laravel/homestead/releases`
 
-### Create empty key
+### Create an empty key
 ```
 $ mkdir -p ~/.ssh
 $ touch ~/.ssh/id_rsa.pub
