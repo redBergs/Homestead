@@ -13,9 +13,11 @@ sudo apt-get install -y mssql-server
 sudo /opt/mssql/bin/mssql-conf setup
 systemctl status mssql-server
 
-sudo /opt/mssql/bin/mssql-conf set sqlagent.enabled.true
+sudo /opt/mssql/bin/mssql-conf set sqlagent.enabled true
 # Restart the MS SQL server
-systemctl restart mssql-server.service
+sudo systemctl restart mssql-server
+
+sudo systemctl restart mssql-server.service
 
 sudo su
 # Register the Microsoft Linux repositories and add their keys.
