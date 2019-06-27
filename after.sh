@@ -1,23 +1,28 @@
+_00. Do sqlsrv in Homestead
+
 # Install MS SQL on Ubuntu Server 18.04
 sudo apt-get update
 sudo apt-get upgrade -y
+
 # Import the necessary repository key
 sudo wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+
 # Add the repository
 sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-preview.list)"
+
 # Update apt
 sudo apt-get update
+
 # Install MS SQL Server
 sudo apt-get install -y mssql-server
+
 # Configure MS SQL Server //MsSql@123
 sudo /opt/mssql/bin/mssql-conf setup
 systemctl status mssql-server
 
-sudo /opt/mssql/bin/mssql-conf set sqlagent.enabled true
+# sudo /opt/mssql/bin/mssql-conf set sqlagent.enabled true
 # Restart the MS SQL server
-sudo systemctl restart mssql-server
-
-sudo systemctl restart mssql-server.service
+systemctl restart mssql-server.service
 
 sudo su
 # Register the Microsoft Linux repositories and add their keys.
@@ -59,3 +64,15 @@ echo "" >> $phpini
 shutdown -r now
 
 # or vagrant reload
+
+
+-------------------------------
+# Config php.ini for NGINX
+sudo su
+echo extension=pdo_sqlsrv.so >> `php --ini | grep "Scan for additional .ini files" | sed -e "s|.*:\s*||"`/30-pdo_sqlsrv.ini
+echo extension=sqlsrv.so >> `php --ini | grep "Scan for additional .ini files" | sed -e "s|.*:\s*||"`/20-sqlsrv.ini
+exit
+
+# Restart NGINX
+/etc/init.d/php$phpversion-fpm restart 
+-------------------------------
