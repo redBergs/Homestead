@@ -16,3 +16,11 @@ You can check the new released version from the url below.<br/>
 $ mkdir -p ~/.ssh
 $ touch ~/.ssh/id_rsa
 ```
+
+### Install MS SQL server etc
+This is to install MS SQL server, the ODBC Driver and SQL Command Line Utility, and Microsoft SQL Server for Laravel/Homestead
+```
+$ vagrant ssh
+$ cd code/ (This is my location for sqlsrv.sh)
+$ bash sqlsrv.sh
+```
