@@ -1,3 +1,8 @@
+### Globally install Composer on mac OS X 10.xx.xx
+```
+$ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+```
+
 ### Start using Homestead as dev environment
 You will need to install vagrant and VirtualBox before setting up Homestead.
 
