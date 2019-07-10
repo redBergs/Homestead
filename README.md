@@ -29,3 +29,15 @@ $ vagrant ssh
 $ cd code/ (This is my location for sqlsrv.sh)
 $ bash sqlsrv.sh
 ```
+
+### Copy DB to 
+```
+$ sudo cp krcmar-db-09JUL2019.bak /var/opt/mssql/data
+```
+
+### Enable PHP Short Open Tag 
+```
+$ sudo nano /etc/php/7.3/fpm/php.ini
+$ short_open_tag = On
+$ sudo service php7.3-fpm restart
+```
