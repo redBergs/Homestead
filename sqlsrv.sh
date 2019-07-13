@@ -72,11 +72,11 @@ sudo su <<EOF
 echo "extension=sqlsrv.so" >> "/etc/php/7.3/fpm/php.ini"
 echo "extension=pdo_sqlsrv.so" >> "/etc/php/7.3/fpm/php.ini"
 
-echo "extension=sqlsrv.so" > /etc/php/7.3/mods-available/sqlsrv.ini
-echo "extension=pdo_sqlsrv.so" > /etc/php/7.3/mods-available/pdo_sqlsrv.ini
-
 echo "extension=sqlsrv.so" >> "/etc/php/7.3/cli/php.ini"
 echo "extension=pdo_sqlsrv.so" >> "/etc/php/7.3/cli/php.ini"
+
+echo "extension=sqlsrv.so" > /etc/php/7.3/mods-available/sqlsrv.ini
+echo "extension=pdo_sqlsrv.so" > /etc/php/7.3/mods-available/pdo_sqlsrv.ini
 
 ln -s /etc/php/7.3/mods-available/sqlsrv.ini /etc/php/7.3/fpm/conf.d/20-sqlsrv.ini
 ln -s /etc/php/7.3/mods-available/pdo_sqlsrv.ini /etc/php/7.3/fpm/conf.d/20-pdo_sqlsrv.ini
