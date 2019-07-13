@@ -24,7 +24,7 @@ echo "Install MS SQL Server";
 echo "+--------------------------------------------------------------+";
 sudo apt-get install -y mssql-server
 
-echo "Configure MS SQL Server //MsSql@123";
+echo "Configure MS SQL Server // MsSql@123";
 echo "+--------------------------------------------------------------+";
 sudo /opt/mssql/bin/mssql-conf setup
 
@@ -55,21 +55,34 @@ sudo apt-get install unixodbc-dev
 sleep 5
 # sqlcmd -S localhost -U sa -P MsSql@123 -Q "SELECT @@VERSION"
 
+echo "";
 echo "Install sqlsrv";
 echo "+--------------------------------------------------------------+";
 sudo pecl install sqlsrv
 
+echo "";
 echo "Install pdo_sqlsrv";
 echo "+--------------------------------------------------------------+";
 sudo pecl install pdo_sqlsrv
 
+echo "";
 echo "Install the PHP drivers for Microsoft SQL Server";
 echo "+--------------------------------------------------------------+";
 sudo su <<EOF
 echo "extension=sqlsrv.so" >> "/etc/php/7.3/fpm/php.ini"
 echo "extension=pdo_sqlsrv.so" >> "/etc/php/7.3/fpm/php.ini"
 
+echo "extension=sqlsrv.so" > /etc/php/7.3/mods-available/sqlsrv.ini
+echo "extension=pdo_sqlsrv.so" > /etc/php/7.3/mods-available/pdo_sqlsrv.ini
+
 echo "extension=sqlsrv.so" >> "/etc/php/7.3/cli/php.ini"
 echo "extension=pdo_sqlsrv.so" >> "/etc/php/7.3/cli/php.ini"
+
+ln -s /etc/php/7.3/mods-available/sqlsrv.ini /etc/php/7.3/fpm/conf.d/20-sqlsrv.ini
+ln -s /etc/php/7.3/mods-available/pdo_sqlsrv.ini /etc/php/7.3/fpm/conf.d/20-pdo_sqlsrv.ini
+
+ln -s /etc/php/7.3/mods-available/sqlsrv.ini /etc/php/7.3/cli/conf.d/20-sqlsrv.ini
+ln -s /etc/php/7.3/mods-available/pdo_sqlsrv.ini /etc/php/7.3/cli/conf.d/20-pdo_sqlsrv.ini
+
 /etc/init.d/php7.3-fpm restart 
 EOF
