@@ -42,3 +42,9 @@ $ short_open_tag = On
 $ display_errors = Off
 $ sudo service php7.3-fpm restart
 ```
+
+### Etc
+```
+$ sudo nano /etc/php/7.3/fpm/php.ini
+```
+
