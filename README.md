@@ -45,6 +45,6 @@ $ sudo service php7.3-fpm restart
 
 ### Etc
 ```
-$ sudo nano /etc/php/7.3/fpm/php.ini
+$ sudo update-ca-certificates --fresh
 ```
 
