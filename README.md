@@ -10,6 +10,7 @@ You will need to install vagrant and VirtualBox before setting up Homestead.
 $ git clone https://github.com/laravel/homestead.git ~/Homestead
 $ cd ~/Homestead
 $ git checkout [to New Version]
+$ git checkout release
 $ // Mac / Linux...
 $ bash init.sh
 ```
