@@ -1,0 +1,44 @@
+[
+	{
+		"name": "timematrics.local",
+		"rootPath": "/Users/kenu/sandBox/code/timeMetrics",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "slim.local",
+		"rootPath": "/Users/kenu/sandBox/code/slim",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "oakville.local",
+		"rootPath": "/Users/kenu/sandBox/code/oakville",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "cmsv2.local",
+		"rootPath": "/Users/kenu/sandBox/code/CMSv2",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "task.local",
+		"rootPath": "/Users/kenu/sandBox/code/laravelAPI",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "tm.local",
+		"rootPath": "/Users/kenu/sandBox/code/krcmar",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	}
+]
