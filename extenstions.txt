@@ -1,29 +1,29 @@
+Name: Alignment
+Name: Auto Close Tag
+Name: Auto Comment Blocks
+Name: Auto Rename Tag
+Name: Better Comments
+Name: Bookmarks
+Name: Bracket Pair Colorizer
+Name: Code Spell Checker
+Name: CSS Peek
+Name: EditorConfig for VS Code
+Name: ESLint
+Name: HTML CSS Support
+Name: JavaScript (ES6) code snippets
+Name: jshint
+Name: Path Autocomplete
+Name: Path Intellisense
+Name: PHP Formatter
+Name: Prettier - Code formatter
+Name: Project Manager
+Name: Rainbow Brackets
+Name: vscode-icons
 
 
-Alignment
 Angular Snippets (Version 8)
-Auto Comment Blocks
-Auto Close Tag
-Auto Rename Tag
-Bookmarks
-Bracket Pair Colorizer
-Code Spell Checker
-CSS Peek
-EditorConfig for VS Code
-ESLint
-HTML CSS Support
-JavaScript (ES6) code snippets
-jshint
-Path Autocomplete
-Path Intellisense
 PHP Debug
 PHP Extension Pack
 PHP Intelephense
 PHP IntelliSense
 phpcs
-Project Manager
-TSLint (deprecated)
-vscode-icons
-
-
-
