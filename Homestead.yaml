@@ -14,6 +14,9 @@ folders:
       to: /home/vagrant/code
 
 sites:
+    - map: oakville.local
+      to: /home/vagrant/code/oakville
+      type: apache
     - map: homestead.local
       to: /home/vagrant/code/newApp/public
     - map: cmsv2.local
@@ -22,12 +25,19 @@ sites:
       to: /home/vagrant/code/base
     - map: task.local
       to: /home/vagrant/code/laravelAPI/public
+    - map: timematrics.local
+      to: /home/vagrant/code/timeMetrics
+    - map: tm.local
+      to: /home/vagrant/code/krcmar/main/one
+    - map: slim.local
+      to: /home/vagrant/code/slim/public
 
 databases:
     - homestead_db
     - base_db
     - task_db
     - api_db
+    - okc_db
 
 # backup: true
 
