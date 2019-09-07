@@ -13,6 +13,9 @@ $ git checkout [to New Version]
 $ git checkout release
 $ // Mac / Linux...
 $ bash init.sh
+$ 
+$ // Windows...
+$ init.bat
 ```
 You can check the new released version from the url below.<br/>
 `https://github.com/laravel/homestead/releases`
