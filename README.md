@@ -16,7 +16,9 @@ $ bash init.sh
 $ 
 $ // Windows...
 $ bash init.sh
-Don’t forget to use the lowercase of your drive name(c instead of C) and forward-slash(/) instead of backslash(\). See what I have written. In a natural way, we should write C:\Users\USER_NAME\ .ssh, right? but no, see carefully. I have written c:/Users/USER_NAME/.ssh instead of C:\Users\USER_NAME\.ssh this is the tricky part, don’t miss it.
+$ 
+Don’t forget to use the lowercase of your drive name(c instead of C) and forward-slash(/) instead of backslash(\). 
+c:/Users/USER_NAME/.ssh instead of C:\Users\USER_NAME\.ssh
 ```
 You can check the new released version from the url below.<br/>
 `https://github.com/laravel/homestead/releases`
