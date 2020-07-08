@@ -26,12 +26,12 @@ sudo /opt/mssql/bin/mssql-conf setup
 echo -e "\n\n+--------------------- sqlcmd -S localhost -U SA -P '1q2w#E4r' +";
 
 
-echo -e "\n\n+ VERIFY mssql server -----------------------------------------+";
+echo -e "\n\n\n+--------- VERIFY mssql server -----------------------------------------+";
 systemctl status mssql-server --no-pager
 
 sleep 5
 
-echo -e "\n\n\n+--------- VERIFY the status of the PHP-FPM service by running +";
+echo -e "\n\n+--------- VERIFY the status of the PHP-FPM service by running +";
 systemctl status php7.4-fpm
 
 sleep 10
