@@ -55,5 +55,7 @@ $ sudo service php7.3-fpm restart
 ### Etc
 ```
 $ sudo update-ca-certificates --fresh
+
+mysql> CREATE DATABASE homestead_db CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci
 ```
 
