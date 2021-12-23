@@ -57,5 +57,9 @@ $ sudo service php7.3-fpm restart
 $ sudo update-ca-certificates --fresh
 
 mysql> CREATE DATABASE homestead_db CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci
+
+set global sql_mode='ONLY_FULL_GROUP_BY,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION';
+
+SET GLOBAL slow_query_log = 'ON';
 ```
 
