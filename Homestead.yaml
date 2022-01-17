@@ -38,9 +38,10 @@ sites:
 
 databases:
     - homestead_db
-    - connects_db
     - app_db
     - api_db
+    - church_db
+    - connects_db
     - site_db
 
 features:
