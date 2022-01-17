@@ -30,7 +30,12 @@ You can check the new released version from the url below.<br/>
 $ mkdir -p ~/.ssh
 $ touch ~/.ssh/id_rsa
 ```
-
+You can generate a new SSH keypair using the ssh-keygen tool. Before doing this, make sure you have a .ssh directory in your user's home directory (e.g. C:/Users/<username> in Windows, or /Users/<username> in Mac/Linux). 
+If not, you can do mkdir $HOME/.ssh.
+```
+$ ssh-keygen -t rsa -f $HOME/.ssh/homestead_rsa
+```
+  
 ### Install MS SQL server etc
 This is to install MS SQL server, the ODBC Driver and SQL Command Line Utility, and Microsoft SQL Server for Laravel/Homestead
 ```
